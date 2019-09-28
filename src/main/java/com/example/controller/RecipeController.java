@@ -40,7 +40,7 @@ public class RecipeController {
 
 		List<Recipe> recipes = new ArrayList<Recipe>();
 		recipes = recipeService.getAllRecipes();
-		log.info("recipe size::::" + recipes.size());
+		log.info("recipe size:" + recipes.size());
 		recipes.stream().forEach(s -> log.info("recipe name-->" + s.getName()));
 		return recipes;
 	}
