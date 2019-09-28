@@ -35,7 +35,6 @@ public class RecipeController {
 	private IngredientService ingredientService;
 
 	@GetMapping(value = "/getRecipe")
-	//@CrossOrigin(origins = "http://localhost:4200")
 	public List<Recipe> getAllRecipe() {
 
 		List<Recipe> recipes = new ArrayList<Recipe>();
